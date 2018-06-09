@@ -7,26 +7,30 @@ to setup
   set-default-shape cars "car"
   create-cars 1 [
     set color blue
-    set xcor -9
-    set ycor -2
+    set xcor -8
+    set ycor -8
     set heading 90
     set turned? false
   ]
   create-cars 1 [
     set color orange
-    set xcor 7
-    set ycor -1
-    set heading -90
+    set xcor 6
+    set ycor 5
+    set heading -180
     set turned? false
   ]
-  ask patches with [ (pycor = -2) and (pxcor > -10) and (pxcor < 10) ] [ set pcolor green ]
-  ask patches with [ (pycor =  2) and (pxcor > -10) and (pxcor < 10) ] [ set pcolor green ]
-  ask patches with [ (pxcor = -9) and (pycor >  -2) and (pycor <  2) ] [ set pcolor green ]
-  ask patches with [ (pxcor =  9) and (pycor >  -2) and (pycor <  2) ] [ set pcolor green ]
-  ask patches with [ (pycor = -1) and (pxcor >  -9) and (pxcor <  9) ] [ set pcolor green ]
-  ask patches with [ (pycor =  1) and (pxcor >  -9) and (pxcor <  9) ] [ set pcolor green ]
-  ask patches with [ (pxcor = -8) and (pycor >  -1) and (pycor <  1) ] [ set pcolor green ]
-  ask patches with [ (pxcor =  8) and (pycor >  -1) and (pycor <  1) ] [ set pcolor green ]
+  ask patches with [ (pycor = 7) and (pxcor >= -8) and (pxcor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pycor = 6) and (pxcor >= -8) and (pxcor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pycor = 0) and (pxcor >= -8) and (pxcor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pycor = -1) and (pxcor >= -8) and (pxcor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pycor = -7) and (pxcor >= -8) and (pxcor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pycor = -8) and (pxcor >= -8) and (pxcor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pxcor = -8) and (pycor >= -8) and (pycor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pxcor = -7) and (pycor >= -8) and (pycor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pxcor = -1) and (pycor >= -8) and (pycor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pxcor = 0) and (pycor >= -8) and (pycor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pxcor = 6) and (pycor >= -8) and (pycor <= 7) ] [ set pcolor green ]
+  ask patches with [ (pxcor = 7) and (pycor >= -8) and (pycor <= 7) ] [ set pcolor green ]
 end
 
 to go
